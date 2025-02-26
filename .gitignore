@@ -8,3 +8,7 @@ output
 .DS_Store
 game_setup/*
 !game_setup/*.yml
+
+target/
+dist/
+Cargo.lock
