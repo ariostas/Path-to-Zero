@@ -4,29 +4,29 @@ use std::io::Cursor;
 
 // TODO: This should be done better
 
-pub const FUELS_2030: &str = include_str!("../edg_inputs/2030/Fuels_data.csv");
-// pub const FUELS_2035: &str = include_str!("../edg_inputs/2035/Fuels_data.csv");
-// pub const FUELS_2040: &str = include_str!("../edg_inputs/2040/Fuels_data.csv");
-// pub const FUELS_2045: &str = include_str!("../edg_inputs/2045/Fuels_data.csv");
-// pub const FUELS_2050: &str = include_str!("../edg_inputs/2050/Fuels_data.csv");
+pub const FUELS_2030: &str = include_str!("../EDG_inputs/2030/Fuels_data.csv");
+// pub const FUELS_2035: &str = include_str!("../EDG_inputs/2035/Fuels_data.csv");
+// pub const FUELS_2040: &str = include_str!("../EDG_inputs/2040/Fuels_data.csv");
+// pub const FUELS_2045: &str = include_str!("../EDG_inputs/2045/Fuels_data.csv");
+// pub const FUELS_2050: &str = include_str!("../EDG_inputs/2050/Fuels_data.csv");
 
-// pub const LOAD_2030: &str = include_str!("../edg_inputs/2030/Load_data.csv");
-// pub const LOAD_2035: &str = include_str!("../edg_inputs/2035/Load_data.csv");
-// pub const LOAD_2040: &str = include_str!("../edg_inputs/2040/Load_data.csv");
-// pub const LOAD_2045: &str = include_str!("../edg_inputs/2045/Load_data.csv");
-// pub const LOAD_2050: &str = include_str!("../edg_inputs/2050/Load_data.csv");
+// pub const LOAD_2030: &str = include_str!("../EDG_inputs/2030/Load_data.csv");
+// pub const LOAD_2035: &str = include_str!("../EDG_inputs/2035/Load_data.csv");
+// pub const LOAD_2040: &str = include_str!("../EDG_inputs/2040/Load_data.csv");
+// pub const LOAD_2045: &str = include_str!("../EDG_inputs/2045/Load_data.csv");
+// pub const LOAD_2050: &str = include_str!("../EDG_inputs/2050/Load_data.csv");
 
-// pub const RESOURCES_2030: &str = include_str!("../edg_inputs/2030/Resources_data.csv");
-// pub const RESOURCES_2035: &str = include_str!("../edg_inputs/2035/Resources_data.csv");
-// pub const RESOURCES_2040: &str = include_str!("../edg_inputs/2040/Resources_data.csv");
-// pub const RESOURCES_2045: &str = include_str!("../edg_inputs/2045/Resources_data.csv");
-// pub const RESOURCES_2050: &str = include_str!("../edg_inputs/2050/Resources_data.csv");
+// pub const RESOURCES_2030: &str = include_str!("../EDG_inputs/2030/Resources_data.csv");
+// pub const RESOURCES_2035: &str = include_str!("../EDG_inputs/2035/Resources_data.csv");
+// pub const RESOURCES_2040: &str = include_str!("../EDG_inputs/2040/Resources_data.csv");
+// pub const RESOURCES_2045: &str = include_str!("../EDG_inputs/2045/Resources_data.csv");
+// pub const RESOURCES_2050: &str = include_str!("../EDG_inputs/2050/Resources_data.csv");
 
-// pub const RESOURCES_VARIABILITY_2030: &str = include_str!("../edg_inputs/2030/Resources_variability.csv");
-// pub const RESOURCES_VARIABILITY_2035: &str = include_str!("../edg_inputs/2035/Resources_variability.csv");
-// pub const RESOURCES_VARIABILITY_2040: &str = include_str!("../edg_inputs/2040/Resources_variability.csv");
-// pub const RESOURCES_VARIABILITY_2045: &str = include_str!("../edg_inputs/2045/Resources_variability.csv");
-// pub const RESOURCES_VARIABILITY_2050: &str = include_str!("../edg_inputs/2050/Resources_variability.csv");
+// pub const RESOURCES_VARIABILITY_2030: &str = include_str!("../EDG_inputs/2030/Resources_variability.csv");
+// pub const RESOURCES_VARIABILITY_2035: &str = include_str!("../EDG_inputs/2035/Resources_variability.csv");
+// pub const RESOURCES_VARIABILITY_2040: &str = include_str!("../EDG_inputs/2040/Resources_variability.csv");
+// pub const RESOURCES_VARIABILITY_2045: &str = include_str!("../EDG_inputs/2045/Resources_variability.csv");
+// pub const RESOURCES_VARIABILITY_2050: &str = include_str!("../EDG_inputs/2050/Resources_variability.csv");
 
 fn type_to_index(type_: &str) -> usize {
     match type_ {
